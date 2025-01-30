@@ -1,13 +1,29 @@
 public class PlayerCharacter {
 
-    static int positionX = 0;
-    static int positionY = 0;
+    private int positionX = 0;
+    private int positionY = 0;
 
-    public static int getX() {
+    public int getX() {
         return positionX;
     }
 
-    public static int getY() {
+    public int getY() {
         return positionY;
+    }
+
+    public void moveW() {
+        positionY++;
+    }
+
+    public void moveS() {
+        positionY--;
+    }
+
+    public void moveA() {
+        positionX--;
+    }
+
+    public void moveD() {
+        positionX++;
     }
 }
